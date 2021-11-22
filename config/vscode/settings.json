@@ -1,0 +1,15 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Cascadia Code'",
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "editor.minimap.enabled": false,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "Dart-Code.dart-code",
+    },
+    "[json, jsonc]": {
+        "editor.formatOnSave": true
+    }
+}

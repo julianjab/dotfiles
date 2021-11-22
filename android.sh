@@ -23,4 +23,7 @@ if ! test $ANDROID_SDK_ROOT; then
     echo export PATH=$PATH:$ANDROID_SDK_FOLDER/cmdline-tools/latest/bin:$ANDROID_SDK_FOLDER/platform-tools >> "$HOME/.profile"
 fi
 
-source "$HOME/.profile"
+source "$HOME/.profile\n"
+
+#Android Vysor
+brew install scrcpy

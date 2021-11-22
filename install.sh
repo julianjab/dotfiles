@@ -24,13 +24,14 @@ brew install --cask android-studio
 brew install --cask spectacle
 
 #Android
-source ./android.sh
+sh ./android.sh
 
 #Flutter
-source ./flutter.sh
+sh ./flutter.sh
 
 #MacOs Defaults
-source ./config/macosdefaults.sh
+sh ./config/macosdefaults.sh
 
 #Vscode
-source ./config/vscode.sh
+sh ./config/vscode.sh
+sh ./fonts.sh
