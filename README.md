@@ -2,6 +2,9 @@
 Configuration and installations files to initialize a mobile development environment
 
 
+
+
+
 ## How to Install
 
 - *With Git*
@@ -10,3 +13,7 @@ Configuration and installations files to initialize a mobile development environ
     cd ~/dotfiles
     sh install.sh
     ```
+
+## Installations
+  
+  
