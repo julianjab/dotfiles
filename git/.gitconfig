@@ -1,0 +1,45 @@
+[user]
+	name = Julian Andres Buitrago
+	email = julian.jab@gmail.com
+
+[pull]
+	ff = only
+
+[merge]
+	tool = p4merge
+
+[mergetool]
+	keepBackup = false
+	keepTemporaries = false
+
+[diff]
+  tool = vscode
+
+[difftool]
+	prompt = false
+	keepBackup = false
+  keepTemporaries = false
+  trustExitCode = false
+
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+
+[difftool "p4merge"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$LOCAL" "$REMOTE"
+
+[mergetool "vscode"]
+	cmd = code --wait $MERGED	
+
+[mergetool "p4merge"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+
+[init]
+	templatedir = ~/.git/templates
+
+[includeIf "gitdir:~/development/lahaus/"]
+	path = .git/lahaus/.gitconfig
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

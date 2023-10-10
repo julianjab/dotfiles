@@ -1,0 +1,11 @@
+[user]
+	name = Julian Andres Buitrago
+	email = julianbuitrago@lahaus.com
+	signingKey = XXXXX
+
+[commit]
+	gpgSign = true
+
+[url "https://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:x-oauth-basic@github.com/la-haus/"]
+	insteadOf = https://github.com/la-haus/
+
